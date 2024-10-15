@@ -1,5 +1,5 @@
-><!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <img src="img/Zalando_logo-700x134.png" alt="nettstedlogo">
-        <nav>
-            <ul>
+        <img id="main-logo" src="img/Zalando_logo-700x134.png" alt="nettstedlogo">
+        <nav class="flex-space-b">
+            <ul class="flex-menu">
                 <li><a href="#">Nyheter</a></li>
                 <li><a href="#">Nordisk stil</a></li>
                 <li><a href="#">Klær</a></li>
@@ -19,10 +19,10 @@
                 <li><a href="#">Streetwear</a></li>
                 <li><a href="#">Sport</a></li>
                 <li><a href="#">Designer</a></li>
-                <li><a href="#">Outlet</a></li>
+                <li><a href="#" id="outlet">Outlet</a></li>
             </ul>
             <form>
-                <label>Søk</label>
+                <label for="search">Søk</label>
                 <input type="search" placeholder="Her kan du søke etter produkter.." id="search">
                 <input type="submit" value="søk">
             </form>
@@ -31,14 +31,67 @@
     <main>
         <section>
             <h2>Våre beste deals</h2>
-            <a href="#">Shop nå</a>
+            <a href="#">Shop nå -></a>
             <img src="img/powerup.webp" alt="Våre beste deals">
         </section>
-        <section>
+        <section class="flex-space-b">
             <h2>Produkter</h2>
-            <article>
-                <img src="img/produkt.webp" alt="SOMETHINGNEW MEGAN - Blazer - harbor mist"
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
             </article>
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/sko.webp" alt="Zadig & Voltaire PERFECT VINTAGE - Klassiske pumps - noir">
+                <a href="#">Zadig & Voltaire</a>
+                <a href="#"><h3>PERFECT VINTAGE - Klassiske pumps - noir</h3></a>
+                <p>4 695 kr</p>
+            </article>
+       
+             
         </section>
     </main>
     <footer>Zalando Light 2024</footer>
