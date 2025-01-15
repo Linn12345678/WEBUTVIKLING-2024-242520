@@ -11,13 +11,13 @@
     <title> Nettbutikk - Forside</title>
     </head>
     <body>
-        <header id="global-header">
-            <form>
+        <header id="global-header"><form>
                 <label for="search"></label>
                 <input type="search" placeholder="søk her" id="search">
                 <input type="submit" value="søk">
             </form>
-            <img id="main-logo" src="img/maisonloremipsum.png" style="width: 200px; height: 150px;" alt="nettstedlogo">
+            <a href="index.html"><h2>LOGO</h2></a>
+            
             <nav class="flex-space-b">
                 <ul class="flex-menu">
                     <li><a href="index.html">Hjem</a></li>
@@ -25,12 +25,11 @@
                     <li><a href="#kategorier">Kategorier</a></li>
                     <li><a href="#bunn">Kontakt oss</a></li>
                 </ul>
-             
-                <i class="fa-solid fa-user"><a href="#"></a></i>
-                <i class="fa-regular fa-heart"><a href="#"></a></i>
-                <i class="fa-solid fa-cart-shopping"><a href="checkout.html"></a></i>
-                
-            </nav>
+
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+             </nav>
         </header>
         <main>
             <ul class="breadcrumb">
@@ -90,8 +89,8 @@
         </main>
         <footer id="bunn">
             <section>
-            <a href="#topp"><img id="footer-logo" src="img/maisonloremipsum.png" style="width: 200px; height: 150px;" alt="nettstedlogo"></a>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                <a href="#global-header"><h2>LOGO</h2></a>            
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
             </section>
             <section id="contact">
                 <h2>Kontakt</h2>
@@ -102,7 +101,7 @@
                 <li><i class="fa-solid fa-clock"></i>Åpningstider: Stenger 15:00</li>
                 </ul>
             </section>
-            <section>
+            <section id="snarveier">
                 <h2>Snarveier</h2>
                 <nav class="flex-space-b">
                     <ul class="flex-menu">

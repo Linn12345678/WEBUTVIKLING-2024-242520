@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+        <link href="ikoner/css/brands.css" rel="stylesheet">
+        <link href="ikoner/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    <title> Nettbutikk - Forside</title>
+    </head>
+    <body>
+        <header id="global-header">
+              <form>
+                <label for="search"></label>
+                <input type="search" placeholder="søk her" id="search">
+                <input type="submit" value="søk">
+            </form>
+            <a href="index.html"><h2>LOGO</h2></a>
+          
+            <nav class="flex-space-b">
+                <ul class="flex-menu">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="#produkter">Produkter</a></li>
+                    <li><a href="#kategorier">Kategorier</a></li>
+                    <li><a href="#bunn">Kontakt oss</a></li>
+                </ul>
+           
+
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+             </nav>
+        </header>
+        <body>
+            <main>
+                <h1>Kasse</h1>
+                <section id="handlekurv">
+                    <h2>1. Handlekurven din</h2>
+                    <div class="cart-items">
+                        <article>
+                            <img id="klassiskepumps-produktbilde" src="img/Skobilde4.webp"  alt="hovedbilde">
+                            <p>TORY-BURCH CAP TOE - Klassiske pumps</p>
+                            <p>kr 4 255,00</p>
+                            <p>Farge: light cream/perfect black</p>
+                        </article>
+                        <article>
+                            <img id="mindreproduktbilde" src="img/Skobilde4.webp"  alt="produktbilde">
+                            <p>TORY-BURCH CAP TOE - Klassiske pumps</p>
+                            <p>kr 4 255,00</p>
+                            <p>Farge: light cream/perfect black</p>
+                        </article>
+                        <article>
+                            <img id="mindreproduktbilde" src="img/Skobilde4.webp" alt="produktbilde">
+                            <p>TORY-BURCH CAP TOE - Klassiske pumps</p>
+                            <p>kr 4 255,00</p>
+                            <p>Farge: light cream/perfect black</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="dine-opplysninger">
+                    <h2>2. Dine opplysninger</h2>
+                    <h3>Leveringsadresse</h3>
+                    <form>
+                        <input type="text" name="fornavn" placeholder="Fornavn*" required>
+                        <input type="text" name="etternavn" placeholder="Etternavn*" required>
+                        <input type="text" name="gatenavn" placeholder="Gatenavn*" required>
+                        <input type="number" name="postnummer" placeholder="Postnummer*" required>
+                        <input type="text" name="poststed" placeholder="Poststed*" required>
+                        <button>Lagre</button>
+                        <a href="#">Avbryt</a>
+                    </form>
+                </section>
+                <section id="leveringsmetoder">
+                    <h2>3. Levering</h2>
+                    <h3>Leveringsvalg</h3>
+                    <form>
+                        <label><input type="radio" name="levering1" value="express-levering"> Express Hjemlevering</label>
+                        <label><input type="radio" name="levering2" value="express-levering-utleveringssted">Express Levering til Utleverinngssted</label>
+                        <label><input type="radio" name="levering3" value="Standards-levering">Standard Hjemlevering</label>
+                    </form>
+
+                </section>
+                <section id="betalingsmetode">
+                    <h2>4. Betaling</h2>
+                    <h3>Betal med kort</h3>
+                    <form>
+                        <label><input type="number" name="kortnummer" placeholder="342342****4435" required>Kortnummer</label>
+                        <label><input type="date" name="utløpsdato" placeholder="mm/dd/yyyy" required>Utløpsdato</label>
+                        <label><input type="number" name="cvc/cvv" placeholder="CVC/CVV" required>CVC/CVV</label>
+                        <button>Betal</button>
+                    </form>
+                </section>
+                <section id="betalingsbeløp">
+                    <h2>Å betale inkl. mva.</h2>
+                    <h3>4 255 kr</h3>
+                    <button>Fullfør kjøp</button>
+                </section>
+                <section>
+                    <h4>Du bekrefter herved at opplysningene og dokumentene du har gitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktig eller ufullstendige opplysninger.</h4>
+                    <form>
+                        <label><input type="checkbox" id="nyhetsbrev" name="jatakknyhetsbrev" value="nyhetsbrev">Ja takk! Send nyhetsbrev til meg.</label>
+                        <label><input type="checkbox" id="tekstmelding" name="ønskertilbud" value="tekstmelding">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
+                    </form>
+
+                </section>
+            </main>
+        </body>
+        <footer id="bunn">
+            <section>
+                <a href="#global-header"><h2>LOGO</h2></a>            
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
+            </section>
+            <section id="contact">
+                <h2>Kontakt</h2>
+                <ul>
+                <li><i class="fa-solid fa-location-dot"></i>Adresse: B R A veien 4, 1757 Halden</li>
+                <li><i class="fa-solid fa-phone"></i>Telefon: +47 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i>E-post: halden@hiof.no</li>
+                <li><i class="fa-solid fa-clock"></i>Åpningstider: Stenger 15:00</li>
+                </ul>
+            </section>
+            <section id="snarveier">
+                <h2>Snarveier</h2>
+                <nav class="flex-space-b">
+                    <ul class="flex-menu">
+                        <li><a href="#produkter">Produkter</a></li>
+                        <li><a href="#kategorier">Kategorier</a></li>
+                        <li><a href="#bunn">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="Sosiale-medier">
+                <h2>Sosiale medier</h2>
+                <nav class="flex-menu">
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.Linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+
+                </nav>
+            </section>
+        </footer>
+    </body>
+</html>
