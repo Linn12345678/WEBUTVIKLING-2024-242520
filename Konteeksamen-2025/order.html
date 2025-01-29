@@ -26,7 +26,7 @@
                 <a href="index.html"> <img id="logo" src="img/fav.png" alt="logo"/></a>
                 <nav class="flex-space-b">
                     <ul class="flex-menu">
-                       <li><a href="index.html/inspirasjon">Tips og Inspirasjon</a></li>
+                       <li><a href="#">Tips og Inspirasjon</a></li>
                        <li><a href="hotell.html">Hotell</a></li>
                        <li><a href="https://www.norwegian.no/">Fly</a></li>
                        <li><a href="#bunn">Kontakt</a></li>
@@ -36,6 +36,86 @@
         </header>
 
         <main>
+            <section id="breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="#">Søk</a></li>
+                <li><a href="hotell.html">Søkeresultater</a></li>
+                <li><a href="#">Romtype</a></li>
+                <li><a href="https://www.norwegian.no/">Fly</a></li>
+                <li><a href="#">Tillegg</a></li>
+                <li><a href="#">OPPLYSNINGER</a></li>
+                <li><a href="#">Bestill</a></li>
+              </ul>
+            </section>
+
+                <h2>Oppgi dine bestillingsopplysninger</h2>
+            <section id="bestillingsskjema-hovedbestiller">
+                <h3>VOKSEN 18+ HOVEDBESTILLER</h3>
+                <form>
+                    <label for="fornavn">FORNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="fornavn" name="fornavn">
+
+                    <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="etternavn" name="etternavn">
+
+                    <label for="fødselsdato">FØDSELSDATO</label>
+                    <input type="number" id="dag" name="dag" min="1" max="31" placeholder="DD">
+                    <input type="number" id="måned" name="måned" min="1" max="12" placeholder="MM">                   
+                    <input type="number" id="år" name="år" min="1930" max="2007" placeholder="ÅÅÅÅ">
+
+                    <label for="kjønn" id="kjønn" name="kjønn">KJØNN:</label>
+                    <label for="kjønn-kvinne" id="kjønn-kvinne" name="kvinne">Kvinne</label>
+                    <input type="radio" id="kjønn-kvinne" name="kvinne" value="kvinne">
+                    <label for="kjønn-mann" id="kjønn-mann" name="mann">Mann</label>
+                    <input type="radio" id="kjønn-mann" name="mann" value="mann">
+
+                    <label for="epost">E-POSTADRESSE:</label>
+                    <input type="email" id="epost" name="epost">
+
+                    <label for="telefonnummer">TELEFONNUMMER:</label>
+                    <input type="tel" id="telefonnummer" name="telefonnummer">
+
+                    <label for="gatenavn">GATEADRESSE:</label>
+                    <input type="text" id="gateadresse" name="gateadresse">
+
+                    <label for="postnummer">POSTNUMMER:</label>
+                    <input type="text" id="postnummer" name="postnummer">
+
+                    <label for="poststed">POSTSTED:</label>
+                    <input type="text" id="poststed" name="poststed">
+
+                    <label for="land">LAND:</label>
+                    <input list="land" name="land" placeholder="Velg et land">
+                    <datalist id="land">
+                        <option value="Norge">Norge</option>
+                        <option value="Sverige">Sverige</option>
+                        <option value="Danmark">Danmark</option>
+                        <option value="Finland">Finland</option>
+                        <option value="Nederland">Nederland</option>
+                    </datalist>
+                </form>
+            </section>
+            <section id="bestillingsskjema-følge">
+                <h3>VOKSEN 18+</h3>
+                <form>
+                    <label for="fornavn">FORNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="fornavn" name="fornavn">
+                    <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="etternavn" name="etternavn">
+                    <label for="fornavn">FØDSELSDATO</label>
+                    <input type="number" id="dag" name="dag" min="1" max="31" placeholder="DD">
+                    <input type="number" id="måned" name="måned" min="1" max="12" placeholder="MM">                   
+                    <input type="number" id="år" name="år" min="1930" max="2007" placeholder="ÅÅÅÅ">
+                    <label for="kjønn" id="kjønn" name="kjønn">KJØNN:</label>
+                    <label for="kvinne" id="kvinne" name="kvinne">Kvinne</label>
+                    <input type="radio" id="kvinne" name="kvinne" value="kvinne">
+                    <label for="kvinne" id="mann" name="mann">Mann</label>
+                    <input type="radio" id="mann" name="mann" value="mann">
+            </section>
+            <button type="submit">Siste trinn →</button>
+
+
+
 
         </main>
 
@@ -86,7 +166,6 @@
                     <li><i class="fa-brands fa-instagram"></i></li>
                     <li><i class="fa-brands fa-facebook"></i></li>
                     <li><i class="fa-brands fa-pinterest"></i></li>
-                    <li><i class="fa-brands fa-tiktok"></i></li>
                     <li><i class="fa-brands fa-tiktok"></i></li>
                     <li><i class="fa-brands fa-youtube"></i></li>
                 </ul>

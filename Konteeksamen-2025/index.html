@@ -12,8 +12,8 @@
     </head>
     <body>
         <header id="global-header">
-         <section>  
-            <nav class="flex-space-b">
+         <section id="navigasjon">  
+            <nav class="navigasjonsbar">
                 <ul class="flex-menu">
                     <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#">Opprett en konto</a></li>
@@ -23,7 +23,7 @@
             </nav>
         </section> 
             <section>
-                <a href="index.html"> <img id="logo" src="img/fav.png" alt="logo"/></a>
+                <a href="index.html"> <img id="logo" src="img/fav.png" style="width: 50px;height: 50px;" alt="logo"/></a>
                 <nav class="flex-space-b">
                     <ul class="flex-menu">
                        <li><a href="#inspirasjon">Tips og Inspirasjon</a></li>
@@ -44,6 +44,7 @@
                 <a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</a>
               </div> 
 
+            <section id="reisesøk">
               <form>
                 <label for="from">Fra</label>
                 <select id="from" name="fra">
@@ -79,12 +80,13 @@
                   <option value="antall4">4</option>
                 </select>
                 
-                <button class="søk">søk</button>
+                <button class="søk">Søk</button>
               </form>
+            </section>
 
               <section id="kampanjer">
-                <img src="img/holiday-2733322_1280.jpg" alt="kampanje">
-                <h3>Bestill sommerens beste uke</h3>
+                <img src="img/holiday-2733322_1280.jpg" style="width: 400px;height: 250px;" alt="kampanje">
+                <h3 id="kampanjeinfo">Bestill sommerens beste uke</h3>
                 <p>Fly + hotell, 7 dager</p>
                 <p> Fra 3 298,-</p>
                 <button class="bestill">Bestill i dag</button>
@@ -109,6 +111,7 @@
                 </div>
               </section>
               <section id="inspirasjon">
+                <h2>Tips & inspirasjon</h2>
                 <article class="card">
                     <h3>Ukens Deal</h3>
                     <img src="img/beach-6514331_640.jpg" alt="greske-favoritter" style="width: 100%;">
@@ -154,16 +157,16 @@
         <footer id="bunn">
             <section id="land">
                 <ul>
-                    <li><img id="sverige" src="flags/sweden.png" alt="svensk flagg">Sverige</li>
-                    <li><img id="danmark" src="flags/denmark.png" alt="dansk flagg">Danmark</li>
-                    <li><img id="norge" src="flags/norway.png" alt="norsk flagg">Norge</li>
-                    <li><img id="finland" src="flags/finland.png" alt="finsk flagg">Finland</li>
-                    <li><img id="nederland" src="flags/netherlands.png" alt="nederlansk flagg">Nederland</li>
+                    <li><img id="sverige" src="flags/sweden.png" style="width: 40px;height: 40px;" alt="svensk flagg">Sverige</li>
+                    <li><img id="danmark" src="flags/denmark.png" style="width: 40px;height: 40px;" alt="dansk flagg">Danmark</li>
+                    <li><img id="norge" src="flags/norway.png" style="width: 40px;height: 40px;" alt="norsk flagg">Norge</li>
+                    <li><img id="finland" src="flags/finland.png" style="width: 40px;height: 40px;" alt="finsk flagg">Finland</li>
+                    <li><img id="nederland" src="flags/netherlands.png" style="width: 40px;height: 40px;" alt="nederlansk flagg">Nederland</li>
                 </ul>
             </section>
             <section id="betalingsmetoder">
                 <h2>BETALINGSMETODER</h2>
-                <ul>
+                <ul class="betaling">
                     <li><i class="fa-brands fa-cc-visa"></i></li>
                     <li><i class="fa-brands fa-cc-mastercard"></i></li>
                     <li><i class="fa-brands fa-cc-paypal"></i></li>
@@ -176,13 +179,13 @@
                 <form>
                     <label>Meld deg på nyhetsbrev her</label>
                         <input type="email" id="email" name="email" placeholder="o.nordmann@example.com">
-                    <button type="submit">Send</button>
+                    <button class="nyhetsbrev-submit">Send</button>
                 </form>
                 <a href="#">Kjøp reisegavekort</a>
             </section>
             <section id="kundeservice">
                 <h2>KUNDESERVICE</h2>
-                    <nav class="flex-space-b">
+                    <nav class="kundeservice">
                         <ul class="flex-menu">
                            <li><a href="#">Tips og Inspirasjon</a></li>
                            <li><a href="hotell.html">Hotell</a></li>
@@ -198,7 +201,6 @@
                     <li><i class="fa-brands fa-instagram"></i></li>
                     <li><i class="fa-brands fa-facebook"></i></li>
                     <li><i class="fa-brands fa-pinterest"></i></li>
-                    <li><i class="fa-brands fa-tiktok"></i></li>
                     <li><i class="fa-brands fa-tiktok"></i></li>
                     <li><i class="fa-brands fa-youtube"></i></li>
                 </ul>

@@ -1,3 +1,6 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 div.scrollmenu {
     background-color: white;
     overflow: auto;
@@ -6,9 +9,127 @@ div.scrollmenu {
   
   div.scrollmenu a {
     display: inline-block;
-    color: #252525;
     text-align: center;
     padding: 14px;
     text-decoration: none;
   }
   
+  
+img.logo {
+float: left;
+}
+
+.navigasjonsbar {
+float: right;
+padding:20px;
+text-align:right;
+text-decoration: none;
+color: black;
+}
+
+.reisesøk{
+    max-width: 400px;
+    min-width: 200px;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left
+}
+a{
+    text-decoration: none;
+    color: #252525;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+footer{
+    background-color: #252525;
+    padding: 30px;
+    color: #f6f5f2;
+}
+
+
+.søk {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ffcf40;
+  color: #252525;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.kampanje {
+    border-radius: 5px;
+}
+.bestill {
+    border-radius: 5px;
+    display: block;
+    width: 30%;
+    border: none;
+    background-color: #ffcf40;
+    font-style: bold;
+    color: #252525;
+    padding: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.submit{
+    border-radius: 5px;
+    display: block;
+    width: 30%;
+    border: none;
+    background-color: #ffcf40;
+    font-style: bold;
+    color: #252525;
+    padding: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.nyhetsbrev-submit{
+    border-radius: 5px;
+    display: block;
+    width: 25%;
+    border: none;
+    background-color: #ffcf40;
+    font-style: bold;
+    color: #252525;
+    padding: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #e8e8e8;
+    max-width: 300px;
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+}
+.kampanjeinfo{
+    background-color: #52d3f0;
+}
+div.scrollmenu-hotellbilder{
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+}
+p.poengscore{
+    border-radius: 5px;
+    display: block;
+    width: 10%;
+    border: none;
+    background-color: #019101;
+    font-style: bold;
+    color: #f6f5f2;
+    padding: 5px 2px;
+    font-size: 16px;
+    text-align: center;
+}
