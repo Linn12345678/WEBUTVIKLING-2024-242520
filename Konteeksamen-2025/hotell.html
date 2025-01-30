@@ -12,26 +12,26 @@
     </head>
     <body>
         <header id="global-header">
-         <section>  
-            <nav class="flex-space-b">
+         <section id="navigasjon">  
+            <nav class="navigasjonsbar">
                 <ul class="flex-menu">
-                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#">Opprett en konto</a></li>
-                    <li><a href="#"><i class="fa-regular fa-user"></i> </a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="navbar"><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="navbar"><a href="#"><i class="fa-regular fa-user"></i> </a></li>
                 </ul>
             </nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+            <nav class="menu">
+                <a href="#inspirasjon">Tips og inspirasjon</a>
+                <a href="hotell.html">Hotell</a>
+                <a href="https://www.norwegian.no/">Fly</a>
+                <a href="#bunn">Kontakt</a>
+                <a href="#">Opprett konto</a>
+            </nav>
+            
         </section> 
-            <section>
-                <a href="index.html"> <img id="logo" src="img/fav.png" alt="logo"/></a>
-                <nav class="flex-space-b">
-                    <ul class="flex-menu">
-                       <li><a href="#inspirasjon">Tips og Inspirasjon</a></li>
-                       <li><a href="hotell.html">Hotell</a></li>
-                       <li><a href="https://www.norwegian.no/">Fly</a></li>
-                       <li><a href="#bunn">Kontakt</a></li>
-                    </ul>
-                </nav>
+            <section id="logo">
+                <a href="index.html"> <img id="logopng" src="img/fav.png" style="width: 50px;height: 50px;" alt="logo"/></a>
         </section>
         </header>
 
@@ -45,12 +45,12 @@
                 <img src="img/beach-666122_640.jpg" style="width: 400px;height: 250px;" alt="hotellbilde6">
               </div> 
 
-              <section>  
+              <section id="oversikt">  
                 <nav class="flex-space-b">
-                    <ul class="flex-menu">
-                        <li><a href="#">Oversikt</a></li>
-                        <li><a href="#">Fasiliteter</a></li>
-                        <li><a href="#">Rom</a></li>
+                    <ul class="flex-menu-oversikt">
+                        <li class="oversikt"><a id="oversikt-understrek" href="#">Oversikt</a></li>
+                        <li class="oversikt"><a href="#">Fasiliteter</a></li>
+                        <li class="oversikt"><a href="#">Rom</a></li>
                     </ul>
                 </nav>
             </section>
@@ -58,38 +58,69 @@
             <section id="hotellrating">
             <h1>Parga Beach Hotell</h1>
             <ul id="ratingikoner">
-                <li><i class="fa-solid fa-sun"></i></li>
-                <li><i class="fa-solid fa-sun"></i></li>
-                <li><i class="fa-solid fa-sun"></i></li>
-                <li><i class="fa-solid fa-sun"></i></li>
-                <li><i class="fa-regular fa-sun"></i></li>
+                <li class="rating"><i class="fa-solid fa-sun"></i></li>
+                <li class="rating"><i class="fa-solid fa-sun"></i></li>
+                <li class="rating"><i class="fa-solid fa-sun"></i></li>
+                <li class="rating"><i class="fa-solid fa-sun"></i></li>
+                <li class="rating"><i class="fa-regular fa-sun"></i></li>
             </ul>
             <h2>Fantastisk</h2>
             <p class="poengscore">8.9</p>
-            <a href="#">Se alle anmeldelser ></a>
+            <a id="link" href="#">Se alle anmeldelser ></a>
             </section>
             <section id="fasiliteter">
                 <h2>Fasiliteter</h2>
                 <p>Parga Beach Hotell tilbyr lorem ipsum dolor sit amet, consectetur adipiscing elit - sed do eiusmod tempor incididunt ut.</p>
                 <ul id="fasilitetsikoner">
-                    <li><i class="fa-solid fa-paw"></i>Kjæledyr-vennlig</li>
-                    <li><i class="fa-solid fa-mug-hot"></i>Frokost</li>
-                    <li><i class="fa-solid fa-spa"></i>Spa</li>
-                    <li><i class="fa-solid fa-bell-concierge"></i>Roomservice</li>
-                    <li><i class="fa-solid fa-martini-glass"></i>Bar</li>
-                    <li><i class="fa-solid fa-dumbbell"></i>Treningssenter</li>
-                    <li><a href="#">Se alle eiendomsfasiliteter ></a></li>
+                    <li class="fasiliteter"><i class="fa-solid fa-paw"></i>Kjæledyr-vennlig</li>
+                    <li class="fasiliteter"><i class="fa-solid fa-mug-hot"></i>Frokost</li>
+                    <li class="fasiliteter"><i class="fa-solid fa-spa"></i>Spa</li>
+                    <li class="fasiliteter"><i class="fa-solid fa-bell-concierge"></i>Roomservice</li>
+                    <li class="fasiliteter"><i class="fa-solid fa-martini-glass"></i>Bar</li>
+                    <li class="fasiliteter"><i class="fa-solid fa-dumbbell"></i>Treningssenter</li>
+                    <li><a id="link" href="#">Se alle eiendomsfasiliteter ></a></li>
                 </ul>
 
             </section>
             <section id="parga-beach-maps">
                 <h2>Utforsk området</h2>
-                <img src="img/Parga beach map.png" style="width: 400px;height: 250px;" alt="utforsk-området">
+                <img id="map" src="img/Parga beach map.png" style="width: 400px;height: 250px;" alt="utforsk-området">
             </section>
-            <section id="valg-av-hotellrom">
+            <section id="velg-rom">
                 <h2>Velg rom</h2>
+                <h3>8 733 kr</h3>
+                <p>2 394 kr per natt</p>
+                <button class="velg-rom">Velg rom</button>
+            </section>
+            <section id="juniorrom">
                 <article class="card">
-
+                    <img src="img/beach-6514331_640.jpg" alt="hotellromvalg" style="width: 100%;"> 
+                    <h3>Junior Suite</h3>
+                    <h4>Plass til 2 • Queen-size seng</h4>
+                    <p class="poengscore">8.9</p>
+                    <p>59 anmeldelser</p>
+                    <h4>6 789 kr</h4>
+                    <p>For 3 netter, lorem ipsum dolor sit amet, consectetur adipiscing elit - sed do eiusmod tempor incididunt ut. Ink moms og avgifter.</p>
+                </article>
+                <article class="card">
+                    <img src="img/beach-6514331_640.jpg" alt="hotellromvalg" style="width: 100%;"> 
+                    <h3>Junior Suite</h3>
+                    <h4>Plass til 2 • Queen-size seng</h4>
+                    <p class="poengscore">8.9</p>
+                    <p>59 anmeldelser</p>
+                    <h4>6 789 kr</h4>
+                    <p>For 3 netter, lorem ipsum dolor sit amet, consectetur adipiscing elit - sed do eiusmod tempor incididunt ut. Ink moms og avgifter.</p>
+                </article>
+                <article class="card">
+                    <img src="img/beach-6514331_640.jpg" alt="hotellromvalg" style="width: 100%;"> 
+                    <h3>Junior Suite</h3>
+                    <h4>Plass til 2 • Queen-size seng</h4>
+                    <p class="poengscore">8.9</p>
+                    <p>59 anmeldelser</p>
+                    <h4>6 789 kr</h4>
+                    <p>For 3 netter, lorem ipsum dolor sit amet, consectetur adipiscing elit - sed do eiusmod tempor incididunt ut. Ink moms og avgifter.</p>
+                </article>
+                <article class="card">
                     <img src="img/beach-6514331_640.jpg" alt="hotellromvalg" style="width: 100%;"> 
                     <h3>Junior Suite</h3>
                     <h4>Plass til 2 • Queen-size seng</h4>
@@ -104,21 +135,21 @@
         <footer id="bunn">
             <section id="land">
                 <ul>
-                    <li><img id="sverige" src="flags/sweden.png" alt="svensk flagg">Sverige</li>
-                    <li><img id="danmark" src="flags/denmark.png" alt="dansk flagg">Danmark</li>
-                    <li><img id="norge" src="flags/norway.png" alt="norsk flagg">Norge</li>
-                    <li><img id="finland" src="flags/finland.png" alt="finsk flagg">Finland</li>
-                    <li><img id="nederland" src="flags/netherlands.png" alt="nederlansk flagg">Nederland</li>
+                    <li class="land"><img id="sverige" src="flags/sweden.png" style="width: 40px;height: 40px;" alt="svensk flagg">Sverige</li>
+                    <li class="land"><img id="danmark" src="flags/denmark.png" style="width: 40px;height: 40px;" alt="dansk flagg">Danmark</li>
+                    <li class="land"><img id="norge" src="flags/norway.png" style="width: 40px;height: 40px;" alt="norsk flagg">Norge</li>
+                    <li class="land"><img id="finland" src="flags/finland.png" style="width: 40px;height: 40px;" alt="finsk flagg">Finland</li>
+                    <li class="land"><img id="nederland" src="flags/netherlands.png" style="width: 40px;height: 40px;" alt="nederlansk flagg">Nederland</li>
                 </ul>
             </section>
             <section id="betalingsmetoder">
                 <h2>BETALINGSMETODER</h2>
-                <ul>
-                    <li><i class="fa-brands fa-cc-visa"></i></li>
-                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
-                    <li><i class="fa-brands fa-cc-paypal"></i></li>
-                    <li><i class="fa-brands fa-cc-apple-pay"></i></li>
-                    <li><i class="fa-brands fa-cc-amazon-pay"></i> </li>
+                <ul class="betaling">
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-visa"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-paypal"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-apple-pay"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-amazon-pay"></i> </li>
                 </ul>
             </section>
             <section id="nyheter-tilbud">
@@ -126,13 +157,13 @@
                 <form>
                     <label>Meld deg på nyhetsbrev her</label>
                         <input type="email" id="email" name="email" placeholder="o.nordmann@example.com">
-                    <button type="submit">Send</button>
+                    <button class="nyhetsbrev-submit">Send</button>
                 </form>
                 <a href="#">Kjøp reisegavekort</a>
             </section>
             <section id="kundeservice">
                 <h2>KUNDESERVICE</h2>
-                    <nav class="flex-space-b">
+                    <nav class="kundeservice">
                         <ul class="flex-menu">
                            <li><a href="#">Tips og Inspirasjon</a></li>
                            <li><a href="hotell.html">Hotell</a></li>
@@ -142,17 +173,17 @@
                         </ul>
                     </nav>
             </section>
-            <section id="sosialemedier">
+            <section id="sosiale-medier">
                 <h2>SOSIALE MEDIER</h2>
                 <ul>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                    <li><i class="fa-brands fa-tiktok"></i></li>
-                    <li><i class="fa-brands fa-tiktok"></i></li>
-                    <li><i class="fa-brands fa-youtube"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-pinterest"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-tiktok"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-youtube"></i></li>
                 </ul>
             </section>
+
         </footer>
     </body>
 </html>

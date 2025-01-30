@@ -1,5 +1,39 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+
+.navbar{
+    display: inline;
+    padding: 5px;
+}
+
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;  
+    user-select: none;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: -1500px;
+    background: #e8e8e8;
+    width: 180px;
+    padding: 10px;
+    transition: right 0.3s;
+}
+.menu a {
+    color: #252525;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+#menu-toggle:checked + .menu-icon + .menu {
+    right: 0;
 }
 div.scrollmenu {
     background-color: white;
@@ -14,7 +48,17 @@ div.scrollmenu {
     text-decoration: none;
   }
   
-  
+div.scrollmenu-tilbud{
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+} 
+div.scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
 img.logo {
 float: left;
 }
@@ -27,7 +71,18 @@ text-decoration: none;
 color: black;
 }
 
-.reisesøk{
+
+#bakgrunnsbilde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    z-index: -1;
+}
+.reisesøk{ 
+ 
     max-width: 400px;
     min-width: 200px;
     padding: 1rem;
@@ -35,6 +90,23 @@ color: black;
     font-size: 16px;
     text-align: left
 }
+#reisesøk form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #e8e8e8;
+    max-width: 500px;
+    margin: auto;
+}
+#reiselengde{
+[name="date"] 
+    display: inline-block;
+    width: calc(50% - 5px);
+    margin-right: 10px;
+}
+
 a{
     text-decoration: none;
     color: #252525;
@@ -132,4 +204,132 @@ p.poengscore{
     padding: 5px 2px;
     font-size: 16px;
     text-align: center;
+}
+#fly-hotell{
+border-bottom: 4px solid #1ca2c1;
+}
+
+p.inspirasjon-understrek{
+    border-bottom: 3px solid #1ca2c1;    
+    max-width: 110px;
+}
+p.inspirasjon-understrek2{
+    border-bottom: 3px solid #1ca2c1;    
+    max-width: 160px;
+}
+p.inspirasjon-understrek3{
+    border-bottom: 3px solid #1ca2c1;    
+    max-width: 90px;
+}
+#tilbud-link {
+    color: #1ca2c1;
+}
+#tilbud-link2{
+    color: #1ca2c1;  
+}
+#tilbud-link3{
+    color: #1ca2c1;  
+}
+.card-tilbud{
+    display: inline;
+    padding: 20px;
+}
+.betalings-metode{
+    display: inline;
+    padding: 20px;   
+    float: left;
+}
+#kundeservice-lenke{
+    color: #f6f5f2;
+}
+#sosialemedier-lenke{
+    display: inline;
+    padding: 20px;
+    color: #f6f5f2;
+}
+.some-ikoner{
+    display: inline;
+    padding: 20px;
+    color: #f6f5f2; 
+}
+.land{
+    display: inline;
+    padding: 20px;
+    font-size: 16px; 
+}
+.rating{
+    display: inline;
+    padding: 3px;  
+    color: #ffcf40;   
+}
+#link{
+    color: #1ca2c1;
+}
+
+.fasiliteter{
+    color: #252525;
+}
+.velg-rom{
+  float: right;
+  border-radius: 10px;
+  display: block;
+  width: 40%;
+  border: none;
+  background-color: #1ca2c1;
+  color: #f6f5f2;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;  
+}
+.oversikt{
+    display: inline;
+    padding: 20px;   
+}
+
+#oversikt-understrek{
+    color: #1ca2c1;
+    border-bottom: 4px solid #1ca2c1;
+}
+#map{
+    border-radius: 10px;
+}
+ul.flex-menu-oversikt{
+    border-bottom: 2px solid #e8e8e8; 
+}
+div.scrollmenu-breadcrumbs{
+    background-color: #1ca2c1;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu-breadcrumbs a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    list-style-type: none;
+
+  }
+  
+#bestillingsskjema-hovedbestiller{
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+#bestillingsskjema-følge{
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+.siste-trinn{
+    border-radius: 5px;
+    display: block;
+    width: 25%;
+    border: none;
+    background-color: #ffcf40;
+    font-style: bold;
+    color: #252525;
+    padding: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;   
 }

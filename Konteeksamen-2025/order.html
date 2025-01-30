@@ -12,40 +12,73 @@
     </head>
     <body>
         <header id="global-header">
-         <section>  
-            <nav class="flex-space-b">
+         <section id="navigasjon">  
+            <nav class="navigasjonsbar">
                 <ul class="flex-menu">
-                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#">Opprett en konto</a></li>
-                    <li><a href="#"><i class="fa-regular fa-user"></i> </a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="navbar"><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="navbar"><a href="#"><i class="fa-regular fa-user"></i> </a></li>
                 </ul>
             </nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+            <nav class="menu">
+                <a href="#inspirasjon">Tips og inspirasjon</a>
+                <a href="hotell.html">Hotell</a>
+                <a href="https://www.norwegian.no/">Fly</a>
+                <a href="#bunn">Kontakt</a>
+                <a href="#">Opprett konto</a>
+            </nav>
+            
         </section> 
-            <section>
-                <a href="index.html"> <img id="logo" src="img/fav.png" alt="logo"/></a>
-                <nav class="flex-space-b">
-                    <ul class="flex-menu">
-                       <li><a href="#">Tips og Inspirasjon</a></li>
-                       <li><a href="hotell.html">Hotell</a></li>
-                       <li><a href="https://www.norwegian.no/">Fly</a></li>
-                       <li><a href="#bunn">Kontakt</a></li>
-                    </ul>
-                </nav>
+            <section id="logo">
+                <a href="index.html"> <img id="logopng" src="img/fav.png" style="width: 50px;height: 50px;" alt="logo"/></a>
+                
         </section>
         </header>
 
         <main>
-            <section id="breadcrumb">
-            <ul class="breadcrumb">
-                <li><a href="#">Søk</a></li>
-                <li><a href="hotell.html">Søkeresultater</a></li>
-                <li><a href="#">Romtype</a></li>
-                <li><a href="https://www.norwegian.no/">Fly</a></li>
-                <li><a href="#">Tillegg</a></li>
-                <li><a href="#">OPPLYSNINGER</a></li>
-                <li><a href="#">Bestill</a></li>
-              </ul>
+            <section id="breadcrumbs">
+        <div class="scrollmenu-breadcrumbs">  
+                <a id="scroll-breadcrumbs" href="#">Søk</a>
+                <a href="#">></a>
+                <a href="hotell.html">Søkeresultater</a>
+                <a href="#">></a>
+                <a href="#">Romtype</a>
+                <a href="#">></a>
+                <a href="https://www.norwegian.no/">Fly</a>
+                <a href="#">></a>
+                <a href="#">Tillegg</a>
+                <a href="#">></a>
+                <a href="#">OPPLYSNINGER</a>
+                <a href="#">></a>
+                <a href="#">Bestill</a>
+        </div> 
+            </section>
+            <section id="dine-valg">
+                <input type="checkbox" id="dine-valg-skjultvindu">
+                <label for="menu-toggle" class="dine-valg-skjultvindu">Dine valg ></label>
+                <article class="card">
+                <img id="dine-valg-hotell" src="img/landscape-2016308_640.jpg" style="width: 400px;height: 250px;" alt="dine-valg-hotellbilde"/>                    
+                <h2>Parga Beach</h2>
+                <ul id="ratingikoner">
+                    <li class="rating"><i class="fa-solid fa-sun"></i></li>
+                    <li class="rating"><i class="fa-solid fa-sun"></i></li>
+                    <li class="rating"><i class="fa-solid fa-sun"></i></li>
+                    <li class="rating"><i class="fa-solid fa-sun"></i></li>
+                    <li class="rating"><i class="fa-regular fa-sun"></i></li>
+                        <li class="fasiliteter"><i class="fa-solid fa-location-dot"></i>Hellas, Parga</li>
+                        <li class="fasiliteter"><i class="fa-regular fa-calendar"></i>Mandag 5.Mai - Mandag 12. Mai</li>
+                        <li class="fasiliteter"><i class="fa-regular fa-user"></i>2 Voksene</li>
+                        <li class="fasiliteter"><i class="fa-solid fa-bed"></i>Deluxerom,Balkong og ikke spesifisert utsikt.</li>
+                        <li class="fasiliteter"><i class="fa-solid fa-utensils"></i>Frokostbuffee</li>
+                        <li class="fasiliteter"><i class="fa-solid fa-plane-departure"></i>Oslo Lufthavn - Preveza</li>
+                        <li>22 003,-</li>
+                        <li>19 803,-</li>
+
+                </ul>
+
+                </article>
+
             </section>
 
                 <h2>Oppgi dine bestillingsopplysninger</h2>
@@ -58,16 +91,17 @@
                     <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
                     <input type="text" id="etternavn" name="etternavn">
 
-                    <label for="fødselsdato">FØDSELSDATO</label>
+                    <label for="fødselsdato">FØDSELSDATO:</label>
                     <input type="number" id="dag" name="dag" min="1" max="31" placeholder="DD">
                     <input type="number" id="måned" name="måned" min="1" max="12" placeholder="MM">                   
                     <input type="number" id="år" name="år" min="1930" max="2007" placeholder="ÅÅÅÅ">
 
-                    <label for="kjønn" id="kjønn" name="kjønn">KJØNN:</label>
-                    <label for="kjønn-kvinne" id="kjønn-kvinne" name="kvinne">Kvinne</label>
-                    <input type="radio" id="kjønn-kvinne" name="kvinne" value="kvinne">
-                    <label for="kjønn-mann" id="kjønn-mann" name="mann">Mann</label>
-                    <input type="radio" id="kjønn-mann" name="mann" value="mann">
+                    <label for="kjønn">KJØNN:</label>
+                    <input type="radio" id="kjønn-kvinne" name="kjønn" value="kvinne">
+                    <label for="kjønn-kvinne">Kvinne</label>
+                    <input type="radio" id="kjønn-mann" name="kjønn" value="mann">
+                    <label for="kjønn-mann">Mann</label>
+
 
                     <label for="epost">E-POSTADRESSE:</label>
                     <input type="email" id="epost" name="epost">
@@ -98,10 +132,10 @@
             <section id="bestillingsskjema-følge">
                 <h3>VOKSEN 18+</h3>
                 <form>
-                    <label for="fornavn">FORNAVN (IFØLGE PASS):</label>
-                    <input type="text" id="fornavn" name="fornavn">
+                    <label for="fornavn-følge">FORNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="fornavn-følge" name="fornavn">
                     <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
-                    <input type="text" id="etternavn" name="etternavn">
+                    <input type="text" id="etternavn-følge" name="etternavn">
                     <label for="fornavn">FØDSELSDATO</label>
                     <input type="number" id="dag" name="dag" min="1" max="31" placeholder="DD">
                     <input type="number" id="måned" name="måned" min="1" max="12" placeholder="MM">                   
@@ -112,7 +146,7 @@
                     <label for="kvinne" id="mann" name="mann">Mann</label>
                     <input type="radio" id="mann" name="mann" value="mann">
             </section>
-            <button type="submit">Siste trinn →</button>
+            <button class="siste-trinn">Siste trinn →</button>
 
 
 
@@ -122,21 +156,21 @@
         <footer id="bunn">
             <section id="land">
                 <ul>
-                    <li><img id="sverige" src="flags/sweden.png" alt="svensk flagg">Sverige</li>
-                    <li><img id="danmark" src="flags/denmark.png" alt="dansk flagg">Danmark</li>
-                    <li><img id="norge" src="flags/norway.png" alt="norsk flagg">Norge</li>
-                    <li><img id="finland" src="flags/finland.png" alt="finsk flagg">Finland</li>
-                    <li><img id="nederland" src="flags/netherlands.png" alt="nederlansk flagg">Nederland</li>
+                    <li class="land"><img id="sverige" src="flags/sweden.png" style="width: 40px;height: 40px;" alt="svensk flagg">Sverige</li>
+                    <li class="land"><img id="danmark" src="flags/denmark.png" style="width: 40px;height: 40px;" alt="dansk flagg">Danmark</li>
+                    <li class="land"><img id="norge" src="flags/norway.png" style="width: 40px;height: 40px;" alt="norsk flagg">Norge</li>
+                    <li class="land"><img id="finland" src="flags/finland.png" style="width: 40px;height: 40px;" alt="finsk flagg">Finland</li>
+                    <li class="land"><img id="nederland" src="flags/netherlands.png" style="width: 40px;height: 40px;" alt="nederlansk flagg">Nederland</li>
                 </ul>
             </section>
             <section id="betalingsmetoder">
                 <h2>BETALINGSMETODER</h2>
-                <ul>
-                    <li><i class="fa-brands fa-cc-visa"></i></li>
-                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
-                    <li><i class="fa-brands fa-cc-paypal"></i></li>
-                    <li><i class="fa-brands fa-cc-apple-pay"></i></li>
-                    <li><i class="fa-brands fa-cc-amazon-pay"></i> </li>
+                <ul class="betaling">
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-visa"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-paypal"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-apple-pay"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-amazon-pay"></i> </li>
                 </ul>
             </section>
             <section id="nyheter-tilbud">
@@ -144,13 +178,13 @@
                 <form>
                     <label>Meld deg på nyhetsbrev her</label>
                         <input type="email" id="email" name="email" placeholder="o.nordmann@example.com">
-                    <button type="submit">Send</button>
+                    <button class="nyhetsbrev-submit">Send</button>
                 </form>
                 <a href="#">Kjøp reisegavekort</a>
             </section>
             <section id="kundeservice">
                 <h2>KUNDESERVICE</h2>
-                    <nav class="flex-space-b">
+                    <nav class="kundeservice">
                         <ul class="flex-menu">
                            <li><a href="#">Tips og Inspirasjon</a></li>
                            <li><a href="hotell.html">Hotell</a></li>
@@ -160,14 +194,14 @@
                         </ul>
                     </nav>
             </section>
-            <section id="sosialemedier">
+            <section id="sosiale-medier">
                 <h2>SOSIALE MEDIER</h2>
                 <ul>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                    <li><i class="fa-brands fa-tiktok"></i></li>
-                    <li><i class="fa-brands fa-youtube"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-pinterest"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-tiktok"></i></li>
+                    <li class="sosialemedier"><i class="fa-brands fa-youtube"></i></li>
                 </ul>
             </section>
 

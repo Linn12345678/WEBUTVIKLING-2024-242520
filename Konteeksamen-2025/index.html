@@ -15,36 +15,36 @@
          <section id="navigasjon">  
             <nav class="navigasjonsbar">
                 <ul class="flex-menu">
-                    <li><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#">Opprett en konto</a></li>
-                    <li><a href="#"><i class="fa-regular fa-user"></i> </a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="navbar"><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="navbar"><a href="#"><i class="fa-regular fa-user"></i> </a></li>
                 </ul>
             </nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+            <nav class="menu">
+                <a href="#inspirasjon">Tips og inspirasjon</a>
+                <a href="hotell.html">Hotell</a>
+                <a href="https://www.norwegian.no/">Fly</a>
+                <a href="#bunn">Kontakt</a>
+                <a href="#">Opprett konto</a>
+            </nav>
+            
         </section> 
-            <section>
-                <a href="index.html"> <img id="logo" src="img/fav.png" style="width: 50px;height: 50px;" alt="logo"/></a>
-                <nav class="flex-space-b">
-                    <ul class="flex-menu">
-                       <li><a href="#inspirasjon">Tips og Inspirasjon</a></li>
-                       <li><a href="hotell.html">Hotell</a></li>
-                       <li><a href="https://www.norwegian.no/">Fly</a></li>
-                       <li><a href="#bunn">Kontakt</a></li>
-                    </ul>
-                </nav>
+            <section id="logo">
+                <a href="index.html"> <img id="logopng" src="img/fav.png" style="width: 50px;height: 50px;" alt="logo"/></a>
         </section>
         </header>
-        <main>
-
+        <main>                
+            <section id="reisesøk">
+                <img id="bakgrunnsbilde" src="img/sea-4768869_1920.jpg" alt="Bakgrunnsbilde">
             <div class="scrollmenu">
-                <a href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
+                <a id="fly-hotell" href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
                 <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
                 <a href="#"><i class="fa-solid fa-city"></i>Storby</a>
                 <a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a>
                 <a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</a>
               </div> 
 
-            <section id="reisesøk">
               <form>
                 <label for="from">Fra</label>
                 <select id="from" name="fra">
@@ -69,7 +69,7 @@
                     <option value="mer-enn-to-uker">Mer enn to uker</option>
                   </select>
 
-                  <label>Velg dato<input type="number" name="date" placeholder="mm/dd/yyyy"></label>
+                  <label for="velg-dato1">Velg dato<input type="number" name="date" placeholder="mm/dd/yyyy"></label>
 
 
                 <label for="antall">Antall reisende</label>
@@ -93,20 +93,20 @@
               </section>
 
               <section id="tilbud">
-                <div class="scrollmenu">
-                    <article class="card">
+                <div class="scrollmenu-tilbud">
+                    <article class="card-tilbud">
                         <h3>Få ekslusive tilbud</h3>
-                        <a href="#">Logg inn/opprett konto for å få rabattkoder >></a>
+                        <a id="tilbud-link" href="#">Logg inn/opprett konto for å få rabattkoder >></a>
                     </article>
 
-                    <article class="card">
+                    <article class="card-tilbud">
                         <h3>Billige resteplasser</h3>
-                        <a href="#">Opptil 50% rabatt >></a>
+                        <a id="tilbud-link2" href="#">Opptil 50% rabatt >></a>
                     </article>
 
-                    <article class="card">
+                    <article class="card-tilbud">
                         <h3>Mars- Spar opptil 5000,-</h3>
-                        <a href="#">Sikre deg et ferie kupp >></a>
+                        <a id="tilbud-link3" href="#">Sikre deg et ferie kupp >></a>
                     </article>
                 </div>
               </section>
@@ -117,38 +117,38 @@
                     <img src="img/beach-6514331_640.jpg" alt="greske-favoritter" style="width: 100%;">
                     <h4>Greske favoritter</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p>Fra kr 3970 -></p>
+                    <p class="inspirasjon-understrek">Fra kr 3970 →</p>
                 </article>
                 <article class="card">
                     <img src="img/beach-1836467_640.jpg" alt="solskinn" style="width: 100%;">
                     <h3>Solskinnspriser- bestill i dag</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p>Fra kr 3203 -></p>
+                    <p class="inspirasjon-understrek">Fra kr 3203 →</p>
                 </article>
                 <article class="card">
                     <img src="img/cathedral-427997_640.jpg" alt="storbyferie" style="width: 100%;">
                     <h3>Storbyferie</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p>Les mer -></p>
+                    <p class="inspirasjon-understrek3">Les mer →</p>
                 </article>
                 <article class="card">
                     <img src="img/building-7014904_640.jpg" alt="påskefavoritten" style="width: 100%;">
                     <h3>Besøk påskefavoritten London</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p>Fra kr 2150 -></p>
+                    <p class="inspirasjon-understrek">Fra kr 2150 →</p>
                 </article>
                 <article class="card">
                     <h3>Nyhet</h3>
                     <img src="img/ski-slope-3223709_640.jpg" alt="nyhet" style="width: 100%;">
                     <h4>Skiferie</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p>Se alle skistedene -></p>
+                    <p class="inspirasjon-understrek2">Se alle skistedene →</p>
                 </article>
                 <article class="card">
                     <img src="img/beach-666122_640.jpg" alt="spar7000" style="width: 100%;">
                     <h3>Spar opptil 7000,- til sommeren</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p>Les mer -></p>
+                    <p class="inspirasjon-understrek3">Les mer →</p>
                 </article>
               </section>
 
@@ -157,21 +157,21 @@
         <footer id="bunn">
             <section id="land">
                 <ul>
-                    <li><img id="sverige" src="flags/sweden.png" style="width: 40px;height: 40px;" alt="svensk flagg">Sverige</li>
-                    <li><img id="danmark" src="flags/denmark.png" style="width: 40px;height: 40px;" alt="dansk flagg">Danmark</li>
-                    <li><img id="norge" src="flags/norway.png" style="width: 40px;height: 40px;" alt="norsk flagg">Norge</li>
-                    <li><img id="finland" src="flags/finland.png" style="width: 40px;height: 40px;" alt="finsk flagg">Finland</li>
-                    <li><img id="nederland" src="flags/netherlands.png" style="width: 40px;height: 40px;" alt="nederlansk flagg">Nederland</li>
+                    <li class="land"><img id="sverige" src="flags/sweden.png" style="width: 40px;height: 40px;" alt="svensk flagg">Sverige</li>
+                    <li class="land"><img id="danmark" src="flags/denmark.png" style="width: 40px;height: 40px;" alt="dansk flagg">Danmark</li>
+                    <li class="land"><img id="norge" src="flags/norway.png" style="width: 40px;height: 40px;" alt="norsk flagg">Norge</li>
+                    <li class="land"><img id="finland" src="flags/finland.png" style="width: 40px;height: 40px;" alt="finsk flagg">Finland</li>
+                    <li class="land"><img id="nederland" src="flags/netherlands.png" style="width: 40px;height: 40px;" alt="nederlansk flagg">Nederland</li>
                 </ul>
             </section>
             <section id="betalingsmetoder">
                 <h2>BETALINGSMETODER</h2>
                 <ul class="betaling">
-                    <li><i class="fa-brands fa-cc-visa"></i></li>
-                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
-                    <li><i class="fa-brands fa-cc-paypal"></i></li>
-                    <li><i class="fa-brands fa-cc-apple-pay"></i></li>
-                    <li><i class="fa-brands fa-cc-amazon-pay"></i> </li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-visa"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-paypal"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-apple-pay"></i></li>
+                    <li class="betalings-metode"><i class="fa-brands fa-cc-amazon-pay"></i> </li>
                 </ul>
             </section>
             <section id="nyheter-tilbud">
@@ -185,25 +185,26 @@
             </section>
             <section id="kundeservice">
                 <h2>KUNDESERVICE</h2>
-                    <nav class="kundeservice">
-                        <ul class="flex-menu">
-                           <li><a href="#">Tips og Inspirasjon</a></li>
-                           <li><a href="hotell.html">Hotell</a></li>
-                           <li><a href="https://www.norwegian.no/">Fly</a></li>
-                           <li><a href="#bunn">Kontakt</a></li>
-                           <li><a href="#">Tilgjengelighetserklæring</a></li>
+                    <nav class="flex-menu">
+                        <ul class="kundeservice">
+                           <li><a id="kundeservice-lenke" href="#">Spørsmål og Svar</a></li>
+                           <li><a id="kundeservice-lenke" href="#">Chat</a></li>
+                           <li><a id="kundeservice-lenke" href="#bunn">Kontakt</a></li>
+                           <li><a id="kundeservice-lenke" href="#">Tilgjengelighetserklæring</a></li>
                         </ul>
                     </nav>
             </section>
-            <section id="sosialemedier">
+            <section id="sosiale-medier">
                 <h2>SOSIALE MEDIER</h2>
+                <nav class="flex-menu">
                 <ul>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                    <li><i class="fa-brands fa-tiktok"></i></li>
-                    <li><i class="fa-brands fa-youtube"></i></li>
+                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
+            </nav>
             </section>
 
         </footer>
