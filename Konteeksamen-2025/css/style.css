@@ -18,7 +18,7 @@
 .menu {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position:absolute;
     top: 10px;
     right: -1500px;
     background: #e8e8e8;
@@ -101,7 +101,6 @@ color: black;
     margin: auto;
 }
 #reiselengde{
-[name="date"] 
     display: inline-block;
     width: calc(50% - 5px);
     margin-right: 10px;
@@ -138,19 +137,20 @@ footer{
 .kampanje {
     border-radius: 5px;
 }
-.bestill {
-    border-radius: 5px;
-    display: block;
-    width: 30%;
-    border: none;
-    background-color: #ffcf40;
-    font-style: bold;
-    color: #252525;
-    padding: 10px 5px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-}
+#bestill-button {
+  border: 5px solid #ffcf40;
+  background-color: #ffcf40;
+  border-radius: 5px;
+  display: block;
+  width: 30%;
+  border: none;
+  color: #252525;
+  padding: 10px 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  }
+
 .submit{
     border-radius: 5px;
     display: block;
@@ -178,6 +178,7 @@ footer{
     text-align: center;
 }
 .card{
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 #e8e8e8;
     max-width: 300px;
@@ -185,6 +186,25 @@ footer{
     margin: auto;
     text-align: left;
 }
+.card-ukensdeal{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #e8e8e8;
+    max-width: 300px;
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+}
+.card-nyhet{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #e8e8e8;
+    max-width: 300px;
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+}
+
 .kampanjeinfo{
     background-color: #52d3f0;
 }
@@ -234,22 +254,76 @@ p.inspirasjon-understrek3{
     display: inline;
     padding: 20px;
 }
+#ukens-deal{
+    border-radius: 5px;
+    display: block;
+    width: 40%;
+    border: none;
+    background-color: #1ca2c1;
+    font-style: bold;
+    color: #f6f5f2;
+    padding: 8px 8px;
+    font-size: 16px;
+    text-align: center;
+}
+#nyhet{
+    border-radius: 5px;
+    display: block;
+    width: 40%;
+    border: none;
+    background-color: #1ca2c1;
+    font-style: bold;
+    color: #f6f5f2;
+    padding: 8px 8px;
+    font-size: 16px;
+    text-align: center;
+}
 .betalings-metode{
     display: inline;
-    padding: 20px;   
+    padding: 5px;   
     float: left;
 }
-#kundeservice-lenke{
+#kundeservice-spm{
     color: #f6f5f2;
 }
-#sosialemedier-lenke{
+#kundeservice-chat{
+    color: #f6f5f2;
+}
+#kundeservice-kontakt{
+    color: #f6f5f2;
+}
+#kundeservice-tilgjengelighetserklæring{
+    color: #f6f5f2;
+}
+#some-instgram{
     display: inline;
-    padding: 20px;
+    padding: 5px;
+    color: #f6f5f2;
+}
+#some-facebook{
+    display: inline;
+    padding: 5px;
+    color: #f6f5f2;
+}
+#some-pinterest{
+    display: inline;
+    padding: 5px;
+    color: #f6f5f2;
+}
+
+#some-tiktok{
+    display: inline;
+    padding: 5px;
+    color: #f6f5f2;
+}
+#some-youtube{
+    display: inline;
+    padding: 5px;
     color: #f6f5f2;
 }
 .some-ikoner{
     display: inline;
-    padding: 20px;
+    padding: 5px;
     color: #f6f5f2; 
 }
 .land{
@@ -300,6 +374,8 @@ ul.flex-menu-oversikt{
 div.scrollmenu-breadcrumbs{
     background-color: #1ca2c1;
     overflow: auto;
+    width: 470px;
+    border-radius: 5px;
     white-space: nowrap;
   }
   
@@ -307,19 +383,21 @@ div.scrollmenu-breadcrumbs{
     display: inline-block;
     text-align: center;
     padding: 14px;
+    color: #f6f5f2;
     text-decoration: none;
     list-style-type: none;
-
   }
   
 #bestillingsskjema-hovedbestiller{
     background-color: #e8e8e8;
     border-radius: 10px;
 }
+
 #bestillingsskjema-følge{
     background-color: #e8e8e8;
     border-radius: 10px;
 }
+
 .siste-trinn{
     border-radius: 5px;
     display: block;

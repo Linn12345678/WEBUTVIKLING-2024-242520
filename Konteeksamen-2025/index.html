@@ -36,7 +36,7 @@
         </header>
         <main>                
             <section id="reisesøk">
-                <img id="bakgrunnsbilde" src="img/sea-4768869_1920.jpg" alt="Bakgrunnsbilde">
+                <img id="bakgrunnsbilde" src="img/sea-4768869_1920.jpg" style="width: 400px;height: 150px;" alt="Bakgrunnsbilde">
             <div class="scrollmenu">
                 <a id="fly-hotell" href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
                 <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
@@ -69,7 +69,7 @@
                     <option value="mer-enn-to-uker">Mer enn to uker</option>
                   </select>
 
-                  <label for="velg-dato1">Velg dato<input type="number" name="date" placeholder="mm/dd/yyyy"></label>
+                  <label>Velg dato<input type="number" name="date" placeholder="mm/dd/yyyy"></label>
 
 
                 <label for="antall">Antall reisende</label>
@@ -89,22 +89,22 @@
                 <h3 id="kampanjeinfo">Bestill sommerens beste uke</h3>
                 <p>Fly + hotell, 7 dager</p>
                 <p> Fra 3 298,-</p>
-                <button class="bestill">Bestill i dag</button>
+                <a id="bestill-button" href="hotell.html">Bestill i dag</a>
               </section>
 
               <section id="tilbud">
                 <div class="scrollmenu-tilbud">
-                    <article class="card-tilbud">
+                    <article class="card">
                         <h3>Få ekslusive tilbud</h3>
                         <a id="tilbud-link" href="#">Logg inn/opprett konto for å få rabattkoder >></a>
                     </article>
 
-                    <article class="card-tilbud">
+                    <article class="card">
                         <h3>Billige resteplasser</h3>
                         <a id="tilbud-link2" href="#">Opptil 50% rabatt >></a>
                     </article>
 
-                    <article class="card-tilbud">
+                    <article class="card">
                         <h3>Mars- Spar opptil 5000,-</h3>
                         <a id="tilbud-link3" href="#">Sikre deg et ferie kupp >></a>
                     </article>
@@ -112,43 +112,43 @@
               </section>
               <section id="inspirasjon">
                 <h2>Tips & inspirasjon</h2>
-                <article class="card">
-                    <h3>Ukens Deal</h3>
-                    <img src="img/beach-6514331_640.jpg" alt="greske-favoritter" style="width: 100%;">
+                <article class="card-ukensdeal">
+                    <h3 id="ukens-deal">Ukens Deal</h3>
+                    <img id="inspo-ukensdeal" src="img/beach-6514331_640.jpg" alt="greske-favoritter" style="width: 100%;">
                     <h4>Greske favoritter</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p class="inspirasjon-understrek">Fra kr 3970 →</p>
+                    <p class="inspirasjon-understrek">Fra kr 3970 <i class="fa-solid fa-arrow-right"></i></p>
                 </article>
                 <article class="card">
                     <img src="img/beach-1836467_640.jpg" alt="solskinn" style="width: 100%;">
                     <h3>Solskinnspriser- bestill i dag</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p class="inspirasjon-understrek">Fra kr 3203 →</p>
+                    <p class="inspirasjon-understrek">Fra kr 3203 <i class="fa-solid fa-arrow-right"></i></p>
                 </article>
                 <article class="card">
                     <img src="img/cathedral-427997_640.jpg" alt="storbyferie" style="width: 100%;">
                     <h3>Storbyferie</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p class="inspirasjon-understrek3">Les mer →</p>
+                    <p class="inspirasjon-understrek3">Les mer <i class="fa-solid fa-arrow-right"></i></p>
                 </article>
                 <article class="card">
                     <img src="img/building-7014904_640.jpg" alt="påskefavoritten" style="width: 100%;">
                     <h3>Besøk påskefavoritten London</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p class="inspirasjon-understrek">Fra kr 2150 →</p>
+                    <p class="inspirasjon-understrek">Fra kr 2150 <i class="fa-solid fa-arrow-right"></i></p>
                 </article>
-                <article class="card">
-                    <h3>Nyhet</h3>
+                <article class="card-nyhet">
+                    <h3 id="nyhet">Nyhet</h3>
                     <img src="img/ski-slope-3223709_640.jpg" alt="nyhet" style="width: 100%;">
                     <h4>Skiferie</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p class="inspirasjon-understrek2">Se alle skistedene →</p>
+                    <p class="inspirasjon-understrek2">Se alle skistedene <i class="fa-solid fa-arrow-right"></i></p>
                 </article>
                 <article class="card">
                     <img src="img/beach-666122_640.jpg" alt="spar7000" style="width: 100%;">
                     <h3>Spar opptil 7000,- til sommeren</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    <p class="inspirasjon-understrek3">Les mer →</p>
+                    <p class="inspirasjon-understrek3">Les mer <i class="fa-solid fa-arrow-right"></i></p>
                 </article>
               </section>
 
@@ -187,10 +187,10 @@
                 <h2>KUNDESERVICE</h2>
                     <nav class="flex-menu">
                         <ul class="kundeservice">
-                           <li><a id="kundeservice-lenke" href="#">Spørsmål og Svar</a></li>
-                           <li><a id="kundeservice-lenke" href="#">Chat</a></li>
-                           <li><a id="kundeservice-lenke" href="#bunn">Kontakt</a></li>
-                           <li><a id="kundeservice-lenke" href="#">Tilgjengelighetserklæring</a></li>
+                           <li><a id="kundeservice-spm" href="#">Spørsmål og Svar</a></li>
+                           <li><a id="kundeservice-chat" href="#">Chat</a></li>
+                           <li><a id="kundeservice-kontakt" href="#bunn">Kontakt</a></li>
+                           <li><a id="kundeservice-tilgjengelighetserklæring" href="#">Tilgjengelighetserklæring</a></li>
                         </ul>
                     </nav>
             </section>
@@ -198,11 +198,11 @@
                 <h2>SOSIALE MEDIER</h2>
                 <nav class="flex-menu">
                 <ul>
-                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
-                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
-                    <li class="some-ikoner"><a id="sosialemedier-lenke" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li class="some-ikoner"><a id="some-instgram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="some-ikoner"><a id="some-facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="some-ikoner"><a id="some-pinterest" href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="some-ikoner"><a id="some-tiktok" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li class="some-ikoner"><a id="some-youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
             </nav>
             </section>
