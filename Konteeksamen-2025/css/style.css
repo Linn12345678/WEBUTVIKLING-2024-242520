@@ -1,7 +1,5 @@
-
-.navbar{
-    display: inline;
-    padding: 5px;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 #menu-toggle {
@@ -29,6 +27,7 @@
 .menu a {
     color: #252525;
     text-decoration: none;
+    background-color: w;
     padding: 10px;
     display: block;
 }
@@ -410,4 +409,30 @@ div.scrollmenu-breadcrumbs{
     font-size: 16px;
     cursor: pointer;
     text-align: center;   
+}
+.hjerte-ikon{
+    border-radius: 20px;
+    color: red;
+    border: none;
+    background-color: #f6f5f2;
+    padding: 5px 5px;
+    width: 5%;
+    text-align: center; 
+}
+.antall-bilder{
+    border-radius: 20px;
+    color: #f6f5f2;
+    border: none;
+    background-color: #252525;
+    padding: 5px 5px;
+    width: 10%;
+    text-align: center; 
+}
+#velg-rom{
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px 0 #e8e8e8;
+    padding: 5px 5px;
+    color: #252525;
+    text-align: left;
 }

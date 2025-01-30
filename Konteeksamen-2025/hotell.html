@@ -36,20 +36,25 @@
         </header>
 
         <main>
+        <section id="hotell-bilder">
             <div class="scrollmenu-hotellbilder">
-                <img src="img/landscape-2016308_640.jpg" style="width: 400px;height: 250px;" alt="hotellbilde1">
-                <img src="img/beach-6514331_640.jpg" style="width: 400px;height: 250px;" alt="hotellbilde2">
-                <img src="img/holiday-2733322_1280.jpg" style="width: 400px;height: 250px;" alt="hotellbilde3">
-                <img src="img/beach-1836467_640.jpg" style="width: 400px;height: 250px;" alt="hotellbilde4">
-                <img src="img/sea-4768869_1920.jpg" style="width: 400px;height: 250px;" alt="hotellbilde5">
-                <img src="img/beach-666122_640.jpg" style="width: 400px;height: 250px;" alt="hotellbilde6">
+                <img src="img/landscape-2016308_640.jpg" style="width: 500px;height: 250px;" alt="hotellbilde1">
+                <img src="img/beach-6514331_640.jpg" style="width: 500px;height: 250px;" alt="hotellbilde2">
+                <img src="img/holiday-2733322_1280.jpg" style="width: 500px;height: 250px;" alt="hotellbilde3">
+                <img src="img/beach-1836467_640.jpg" style="width: 500px;height: 250px;" alt="hotellbilde4">
+                <img src="img/sea-4768869_1920.jpg" style="width: 500px;height: 250px;" alt="hotellbilde5">
+                <img src="img/beach-666122_640.jpg" style="width: 500px;height: 250px;" alt="hotellbilde6">
               </div> 
-
+            </section>
+            <ul>
+            <li class="hjerte-ikon"><i class="fa-regular fa-heart"></i></li>
+            <li class="antall-bilder"><i class="fa-regular fa-images"></i>49</li>
+            </ul>
               <section id="oversikt">  
                 <nav class="flex-space-b">
                     <ul class="flex-menu-oversikt">
                         <li class="oversikt"><a id="oversikt-understrek" href="#">Oversikt</a></li>
-                        <li class="oversikt"><a href="#">Fasiliteter</a></li>
+                        <li class="oversikt"><a href="#fasiliteter">Fasiliteter</a></li>
                         <li class="oversikt"><a href="#">Rom</a></li>
                     </ul>
                 </nav>
@@ -78,16 +83,17 @@
                     <li class="fasiliteter"><i class="fa-solid fa-bell-concierge"></i>Roomservice</li>
                     <li class="fasiliteter"><i class="fa-solid fa-martini-glass"></i>Bar</li>
                     <li class="fasiliteter"><i class="fa-solid fa-dumbbell"></i>Treningssenter</li>
-                    <li><a id="link" href="#">Se alle eiendomsfasiliteter ></a></li>
+                    <li><a id="link-fasiliteter" href="#fasiliteter">Se alle eiendomsfasiliteter ></a></li>
                 </ul>
 
             </section>
             <section id="parga-beach-maps">
                 <h2>Utforsk området</h2>
-                <img id="map" src="img/Parga beach map.png" style="width: 400px;height: 250px;" alt="utforsk-området">
+                <img id="map" src="img/parga-beach-map.png" style="width: 400px;height: 250px;" alt="utforsk-området">
             </section>
-            <section id="velg-rom">
+
                 <h2>Velg rom</h2>
+            <section id="velg-rom">
                 <h3>8 733 kr</h3>
                 <p>2 394 kr per natt</p>
                 <button class="velg-rom">Velg rom</button>
@@ -163,27 +169,29 @@
             </section>
             <section id="kundeservice">
                 <h2>KUNDESERVICE</h2>
-                    <nav class="kundeservice">
-                        <ul class="flex-menu">
-                           <li><a href="#">Tips og Inspirasjon</a></li>
-                           <li><a href="hotell.html">Hotell</a></li>
-                           <li><a href="https://www.norwegian.no/">Fly</a></li>
-                           <li><a href="#bunn">Kontakt</a></li>
-                           <li><a href="#">Tilgjengelighetserklæring</a></li>
+                    <nav class="flex-menu">
+                        <ul class="kundeservice">
+                           <li><a id="kundeservice-spm" href="#">Spørsmål og Svar</a></li>
+                           <li><a id="kundeservice-chat" href="#">Chat</a></li>
+                           <li><a id="kundeservice-kontakt" href="#bunn">Kontakt</a></li>
+                           <li><a id="kundeservice-tilgjengelighetserklæring" href="#">Tilgjengelighetserklæring</a></li>
                         </ul>
                     </nav>
             </section>
             <section id="sosiale-medier">
                 <h2>SOSIALE MEDIER</h2>
+                <nav class="flex-menu">
                 <ul>
-                    <li class="sosialemedier"><i class="fa-brands fa-instagram"></i></li>
-                    <li class="sosialemedier"><i class="fa-brands fa-facebook"></i></li>
-                    <li class="sosialemedier"><i class="fa-brands fa-pinterest"></i></li>
-                    <li class="sosialemedier"><i class="fa-brands fa-tiktok"></i></li>
-                    <li class="sosialemedier"><i class="fa-brands fa-youtube"></i></li>
+                    <li class="some-ikoner"><a id="some-instgram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="some-ikoner"><a id="some-facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="some-ikoner"><a id="some-pinterest" href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li class="some-ikoner"><a id="some-tiktok" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li class="some-ikoner"><a id="some-youtube" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
+            </nav>
             </section>
 
         </footer>
     </body>
+
 </html>
