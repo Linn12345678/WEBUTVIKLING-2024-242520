@@ -13,7 +13,7 @@
     </head>
     <body>
         <header id="global-header">
-        </section> 
+     
         <section id="logo">
             <a href="index.html"> <img id="logopng" src="img/fav.png" style="width: 50px;height: 50px;" alt="logo"/></a>
         </section> 
@@ -26,7 +26,8 @@
          
 
             </nav>
-            <input type="checkbox" id="menu-toggle">
+            </section>    
+    <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
             <nav class="menu">
                 <a href="#inspirasjon">Tips og inspirasjon</a>
@@ -89,10 +90,10 @@
                     <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
                     <input type="text" id="etternavn" name="etternavn">
 
-                    <label for="fødselsdato">FØDSELSDATO:</label>
-                    <input type="number" id="dag" name="dag" min="1" max="31" placeholder="DD">
-                    <input type="number" id="måned" name="måned" min="1" max="12" placeholder="MM">                   
-                    <input type="number" id="år" name="år" min="1930" max="2007" placeholder="ÅÅÅÅ">
+                    <label for="fodselsdato">FØDSELSDATO:</label>
+                    <input type="number" id="fodselsdato" name="dag" min="1" max="31" placeholder="DD">
+                    <input type="number" id="fodsels-måned" name="måned" min="1" max="12" placeholder="MM">                   
+                    <input type="number" id="fodselsdato-år" name="år" min="1930" max="2007" placeholder="ÅÅÅÅ">
 
                     <label>KJØNN:</label>
                     <input type="radio" id="kjønn-kvinne" name="kjønn" value="kvinne">
@@ -116,15 +117,14 @@
                     <label for="poststed">POSTSTED:</label>
                     <input type="text" id="poststed" name="poststed">
 
-                    <label for="velg-et-land">LAND:</label>
-                    <input list="land" name="land" placeholder="Velg et land">
-                    <datalist id="velg-land">
+                    <label for="from">LAND:</label>
+                    <select id="from" name="fra">
                         <option value="Norge">Norge</option>
                         <option value="Sverige">Sverige</option>
                         <option value="Danmark">Danmark</option>
                         <option value="Finland">Finland</option>
                         <option value="Nederland">Nederland</option>
-                    </datalist>
+                      </select>
                 </form>
             </section>
             <section id="bestillingsskjema-følge">
@@ -134,8 +134,8 @@
                     <input type="text" id="fornavn-følge" name="fornavn">
                     <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
                     <input type="text" id="etternavn-følge" name="etternavn">
-                    <label for="fornavn">FØDSELSDATO</label>
-                    <input type="number" id="dag-følge" name="dag" min="1" max="31" placeholder="DD">
+                    <label for="fodselsdag">FØDSELSDATO</label>
+                    <input type="number" id="fodselsdag" name="dag" min="1" max="31" placeholder="DD">
                     <input type="number" id="måned-følge" name="måned" min="1" max="12" placeholder="MM">                   
                     <input type="number" id="år-følge" name="år" min="1930" max="2007" placeholder="ÅÅÅÅ">
                     <label>KJØNN:</label>
