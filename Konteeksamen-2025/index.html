@@ -13,14 +13,21 @@
     </head>
     <body>
         <header id="global-header">
+     
+        <section id="logo">
+            <a href="index.html"> <img id="logopng" src="img/fav.png" style="width: 50px;height: 50px;" alt="logo"/></a>
+        </section> 
          <section id="navigasjon">  
             <nav class="navigasjonsbar">
                 <ul class="flex-menu">
                     <li class="navbar"><a href="order.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li class="navbar"><a href="#"><i class="fa-regular fa-user"></i> </a></li>
                 </ul>
+         
+
             </nav>
-            <input type="checkbox" id="menu-toggle">
+            </section>    
+<input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
             <nav class="menu">
                 <a href="#inspirasjon">Tips og inspirasjon</a>
@@ -29,15 +36,12 @@
                 <a href="#bunn">Kontakt</a>
                 <a href="#">Opprett konto</a>
             </nav>
-        </section> 
-            <section id="logo">
-                <a href="index.html"> <img id="logopng" src="img/fav.png" style="width: 50px;height: 50px;" alt="logo"/></a>
-        </section>
+
         </header>
         <main>                
             <section id="reisesøk">
                 <img id="bakgrunnsbilde" src="img/sea-4768869_1920.jpg" style="width: 400px;height: 150px;" alt="Bakgrunnsbilde">
-            <div class="scrollmenu-reisesøk">
+            <div class="scrollmenu">
                 <a id="fly-hotell" href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a>
                 <a href="#"><i class="fa-solid fa-plane"></i>Fly</a>
                 <a href="#"><i class="fa-solid fa-city"></i>Storby</a>
@@ -83,15 +87,14 @@
                 <button class="søk">Søk</button>
               </form>
             </section>
-
-              <section id="kampanjer">
                 <img src="img/holiday-2733322_1280.jpg" style="width: 400px;height: 250px;" alt="kampanje">
+              <section id="kampanjer">
                 <h3 id="kampanjeinfo">Bestill sommerens beste uke</h3>
-                <p>Fly + hotell, 7 dager</p>
-                <p> Fra 3 298,-</p>
-                <a id="bestill-button" href="hotell.html">Bestill i dag</a>
-              </section>
+                <p class="kampanjeinfo">Fly + hotell, 7 dager</p>
+                <p class="kampanjeinfo-pris"> Fra 3 298,-</p>
 
+              </section>
+                <a id="bestill-button" href="hotell.html">Bestill i dag</a>
               <section id="tilbud">
                 <div class="scrollmenu-tilbud">
                     <article class="card">

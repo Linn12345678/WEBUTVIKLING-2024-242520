@@ -61,6 +61,14 @@ div.scrollmenu a {
 img.logo {
 float: left;
 }
+.navbar{
+    display: inline;
+
+}
+
+#global-header{
+    display: inline-flex;
+}
 
 .navigasjonsbar {
 float: right;
@@ -70,6 +78,9 @@ text-decoration: none;
 color: black;
 }
 
+#navigasjon{
+    display: flex;
+}
 
 #bakgrunnsbilde {
     position: absolute;
@@ -204,9 +215,7 @@ footer{
     text-align: left;
 }
 
-.kampanjeinfo{
-    background-color: #52d3f0;
-}
+
 div.scrollmenu-hotellbilder{
     background-color: white;
     overflow: auto;
@@ -223,6 +232,40 @@ p.poengscore{
     padding: 5px 2px;
     font-size: 16px;
     text-align: center;
+}
+#kampanjer{
+    border-radius: 5px;
+    display: block;
+    width: 50%;
+    border: none;
+    background-color: #52d3f0;
+    color: #252525;
+    padding: 5px 2px;
+    text-align: center; 
+}
+#kampanjeinfo{
+    color: #252525;
+    padding: 5px 2px;
+    text-align: left; 
+    font-style: bold;
+    font-size: 16px;
+}
+.kampanjeinfo {
+    color: #252525;
+    padding: 5px 2px;
+    font-size: 14px;
+    text-align: left; 
+}
+.kampanjeinfo-pris{
+    color: #252525;
+    padding: 5px 2px;
+    text-align: left; 
+    font-style: bold;
+    font-size: 16px;
+}
+
+#link-fasiliteter{
+    color: #1ca2c1;
 }
 #fly-hotell{
 border-bottom: 4px solid #1ca2c1;
