@@ -78,9 +78,6 @@ text-decoration: none;
 color: black;
 }
 
-#navigasjon{
-    display: flex;
-}
 
 #bakgrunnsbilde {
     position: absolute;
@@ -285,6 +282,7 @@ p.inspirasjon-understrek3{
 }
 #tilbud-link {
     color: #1ca2c1;
+
 }
 #tilbud-link2{
     color: #1ca2c1;  
@@ -380,6 +378,9 @@ p.inspirasjon-understrek3{
 }
 #link{
     color: #1ca2c1;
+}
+.rabattert-pris{
+    color: red;
 }
 
 .fasiliteter{
